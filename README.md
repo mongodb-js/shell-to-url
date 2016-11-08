@@ -24,7 +24,7 @@ console.log(shellToUrl(connectionString));
 
 Apache 2.0
 
-[travis_img]: https://img.shields.io/travis/mongodb-js/mongodb-shell-to-url.svg
-[travis_url]: https://travis-ci.org/mongodb-js/mongodb-shell-to-url
+[travis_img]: https://img.shields.io/travis/mongodb-js/shell-to-url.svg
+[travis_url]: https://travis-ci.org/mongodb-js/shell-to-url
 [npm_img]: https://img.shields.io/npm/v/mongodb-shell-to-url.svg
 [npm_url]: https://npmjs.org/package/mongodb-shell-to-url
