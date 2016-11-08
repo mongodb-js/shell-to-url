@@ -1,11 +1,24 @@
 # mongodb-shell-to-url [![travis][travis_img]][travis_url] [![npm][npm_img]][npm_url]
 
-> Converts a shell connection string (from Atlas) to a MongoDB URL.
+Converts a shell connection string (from Atlas) to a MongoDB URL.
 
 ## Example
 
 ```javascript
+
+var shellToUrl = require('mongodb-shell-to-url');
+var connectionString = 'mongo "mongodb://localhost:27017?replicaSet=MyCluster" --ssl --username hans';
+
+console.log(shellToUrl(connectionString));
+// logs "mongodb://hans:PASSWORD@localhost:27017?ssl=true&replicaSet=MyCluster&authSource=admin"
 ```
+
+## Known Limitations
+
+- [ ] requires a MongoDB URI in double-quotes
+- [ ] does not support `--hostname`, `--port` yet
+- [ ] ignores password and hard-codes to `PASSWORD` for security reasons
+- [ ] only works if the original MongoDB URL contains a `?`, sorry :-)
 
 ## License
 
