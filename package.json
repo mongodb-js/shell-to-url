@@ -1,7 +1,7 @@
 {
   "name": "mongodb-shell-to-url",
   "description": "Converts a shell connection string (from Atlas) to a MongoDB URL.",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
     "fmt": "mongodb-js-fmt",
     "check": "mongodb-js-precommit",
